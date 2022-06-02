@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - AlbumName</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    <div>
+    
+      <!--
+        Gallery title
+      -->
+      <header style="color: #17baef;">
+        <h1><a href="index.html">Photo Gallery</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+    
+      <nav class="breadcrumbs">
+        <div class="mask"></div>
+    <a class="breadcrumb-item" href="index.html">Home</a>
+          <span class="separator">&gt;</span><a class="breadcrumb-item" href="AlbumName.html">AlbumName</a>
+      </nav>
+    
+      <!--
+        Main gallery panel
+      -->
+      <section id="content">
+    
+        <!--
+          Nested albums, if any
+        -->
+        <ul id="albums">
+        </ul>
+    
+        <!--
+          All photos and videos
+        -->
+        <ul id="media">
+            
+              <li data-src="media/large/AlbumName/Periparus_venustulus-%E9%BB%84%E8%85%B9%E5%B1%B1%E9%9B%80-DSCN0588-denoise-denoise.jpg"
+                  data-sub-html="          "
+                  data-download-url="media/original/AlbumName/Periparus_venustulus-%E9%BB%84%E8%85%B9%E5%B1%B1%E9%9B%80-DSCN0588-denoise-denoise.jpg"
+                  
+                  data-filename="Periparus_venustulus-黄腹山雀-DSCN0588-denoise-denoise.jpg"
+            
+                >
+                <a href="media/original/AlbumName/Periparus_venustulus-%E9%BB%84%E8%85%B9%E5%B1%B1%E9%9B%80-DSCN0588-denoise-denoise.jpg">
+                  <img src="media/thumbs/AlbumName/Periparus_venustulus-%E9%BB%84%E8%85%B9%E5%B1%B1%E9%9B%80-DSCN0588-denoise-denoise.jpg"
+                       width="120"
+                       height="120"
+                       alt="Periparus_venustulus-黄腹山雀-DSCN0588-denoise-denoise.jpg" />
+                </a>
+              </li>        
+              <li data-src="media/large/AlbumName/%E5%B0%8F%E5%A4%AA%E5%B9%B3%E9%B8%9F-P1700896.JPG"
+                  data-sub-html=""
+                  data-download-url="media/original/AlbumName/%E5%B0%8F%E5%A4%AA%E5%B9%B3%E9%B8%9F-P1700896.JPG"
+                  
+                  data-filename="小太平鸟-P1700896.JPG"
+            
+                >
+                <a href="media/original/AlbumName/%E5%B0%8F%E5%A4%AA%E5%B9%B3%E9%B8%9F-P1700896.JPG">
+                  <img src="media/thumbs/AlbumName/%E5%B0%8F%E5%A4%AA%E5%B9%B3%E9%B8%9F-P1700896.JPG"
+                       width="120"
+                       height="120"
+                       alt="小太平鸟-P1700896.JPG" />
+                </a>
+              </li>        
+              <li data-src="media/large/AlbumName/%E7%87%95%E9%9B%80-P1702513.jpg"
+                  data-sub-html=""
+                  data-download-url="media/original/AlbumName/%E7%87%95%E9%9B%80-P1702513.jpg"
+                  
+                  data-filename="燕雀-P1702513.jpg"
+            
+                >
+                <a href="media/original/AlbumName/%E7%87%95%E9%9B%80-P1702513.jpg">
+                  <img src="media/thumbs/AlbumName/%E7%87%95%E9%9B%80-P1702513.jpg"
+                       width="120"
+                       height="120"
+                       alt="燕雀-P1702513.jpg" />
+                </a>
+              </li>    </ul>
+    
+        <!--
+          Pagination
+        -->
+    
+        <!--
+          Zip file link
+        -->
+    
+      </section>
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>Copyright Text</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
