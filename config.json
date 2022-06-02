@@ -9,5 +9,6 @@
   "theme": "mosaic",
   "css": "./custom.css",
   "footer": "Copyright Text",
-  "usage-stats": false
+  "usage-stats": false,
+  "embed-exif": true
 }
